@@ -1,0 +1,343 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/poppins-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff"), url("../fonts/poppins-v20-latin-regular.ttf") format("truetype"), url("../fonts/poppins-v20-latin-regular.svg#Poppins") format("svg");
+  /* Legacy iOS */
+}
+/* abhaya-libre-regular - latin */
+@font-face {
+  font-family: "Abhaya Libre";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("../fonts/abhaya-libre-v13-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/abhaya-libre-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/abhaya-libre-v13-latin-regular.woff2") format("woff2"), url("../fonts/abhaya-libre-v13-latin-regular.woff") format("woff"), url("../fonts/abhaya-libre-v13-latin-regular.ttf") format("truetype"), url("../fonts/abhaya-libre-v13-latin-regular.svg#AbhayaLibre") format("svg");
+  /* Legacy iOS */
+}
+.l-header {
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.l-header__logo {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  width: 42px;
+  transform: scaleX(-1);
+}
+
+.l-header__nav {
+  margin-right: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.l-main {
+  width: min(100% - 2rem, 50rem);
+  /*800px */
+  width: min(100% - 2rem, 75rem);
+  /*1200px */
+  margin-inline: auto;
+}
+
+.l-footer {
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+body {
+  font-family: "Poppins";
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abhaya Libre";
+}
+
+h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+nav {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+}
+nav li {
+  padding-left: 1.3rem;
+  list-style-type: none;
+}
+nav li a:hover {
+  color: green;
+  text-decoration: underline;
+}
+nav li a:link,
+nav li a:visited {
+  color: #666;
+  text-decoration: none;
+}
+nav li a.active {
+  color: yellow;
+  text-decoration: underline;
+}
+nav .invisible {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main,
+#container {
+  flex: 1;
+  /* damit erstreckt sich main ueber die gesamte verfuegbare hoehe */
+}
+
+.mod_tagcloudnews ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.cloud {
+  background-color: beige;
+  padding: 2rem;
+  border-radius: 30px;
+}
+.cloud .size1 {
+  font-size: 90%;
+  align-self: baseline;
+}
+.cloud .size2 {
+  font-size: 110%;
+  align-self: center;
+}
+.cloud .size3 {
+  font-size: 120%;
+  align-self: center;
+}
+.cloud .size4 {
+  font-size: 140%;
+  align-self: baseline;
+}
+
+/* tag cloud end */
+/* Blog - Pagination */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Blog - Pagination end  */
+/* Blog  */
+.mod_newslist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.layout_latest {
+  border-bottom: 3px solid hotpink;
+  position: relative;
+}
+.layout_latest p.info {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+}
+
+/* Blog end  */
+/* Blog - Kategorien  */
+.mod_newscategories ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mod_newscategories ul li {
+  padding-right: 20px;
+  margin-right: 40px;
+}
+.mod_newscategories ul li strong {
+  font-weight: 400;
+}
+.mod_newscategories ul li::marker {
+  color: hotpink;
+  font-size: 2rem;
+  content: "☺ ";
+}
+
+/* Blog - Kategorien  */
+.ce_text,
+.rs-columns,
+.pagination {
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+a {
+  color: chocolate;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+:root {
+  --gradient: linear-gradient(90deg, #ee6352, purple, limegreen);
+}
+
+.fun {
+  background-image: var(--gradient);
+}
+
+.box {
+  width: 50vw;
+  height: 50vh;
+  background-image: linear-gradient(red, blue);
+  background-image: linear-gradient(red 75%, blue);
+  background-image: linear-gradient(red 150px, blue);
+  background-image: linear-gradient(red, pink, orange, blue);
+  background-image: linear-gradient(to left, red, blue);
+  background-image: linear-gradient(to right top, red, blue);
+  background-image: linear-gradient(45deg, red, blue);
+  background-image: radial-gradient(red, blue);
+  background-image: linear-gradient(to left, red 10%, blue 10%, blue 20%, red 10%);
+  /*erzeugt streifen */
+  background-image: repeating-linear-gradient(45deg, red 10%, blue 10%);
+}
+
+.title {
+  background-image: var(--gradient);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  font-size: 18rem;
+  font-weight: 900;
+}
+
+/* 
+utilities: border, opacity, sizing, spacing, etc.
+*/
+p {
+  margin: 1.6rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.8rem 0 1.2rem 0;
+}
+
+.shame {
+  color: red;
+}
+
+.card__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.card, .card--left {
+  background: limegreen;
+  border: 4px solid hotpink;
+}
+
+.card--left {
+  color: white;
+  padding: 30px;
+}
+
+.card--right {
+  color: yellow;
+  padding: 30px;
+  background: limegreen;
+  border: 4px solid hotpink;
+}
+
+.call-to-action__title {
+  font-size: 2.5rem;
+  color: #f07178;
+}/*# sourceMappingURL=style.css.map */

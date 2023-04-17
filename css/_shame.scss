@@ -1,0 +1,61 @@
+.shame {
+  color: red;
+}
+
+
+.card__container {
+  display: flex;
+  gap: 2rem;
+}
+
+
+.card {
+  background: limegreen;
+  border: 4px solid hotpink;
+}
+
+.card--left {
+  @extend .card;
+  color: white;
+  padding: 30px;
+}
+
+@mixin cardMX {
+  background: limegreen;
+  border: 4px solid hotpink;
+}
+
+.card--right {
+  color: yellow;
+  padding: 30px;
+  @include cardMX
+}
+
+
+
+// %card {
+//   background: limegreen;
+//   border: 4px solid hotpink;
+// }
+
+// .card--left {
+//   @extend %card;
+//   color: white;
+//   padding: 30px;
+// }
+
+// .call-to-action__title {
+//   font-size: 2.5rem;
+//   color: #f07178;
+// }
+
+@mixin call-to-action {
+  &__title {
+    font-size: 2.5rem;
+    color: #f07178;
+  }
+}
+
+.call-to-action {
+  @include call-to-action;
+}

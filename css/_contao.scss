@@ -1,0 +1,98 @@
+.mod_tagcloudnews ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.cloud {
+  background-color: beige;
+  padding: 2rem;
+  border-radius: 30px;
+
+  .size1 {
+    font-size: 90%;
+    align-self: baseline;
+  }
+
+  .size2 {
+    font-size: 110%;
+    align-self: center;
+  }
+
+  .size3 {
+    font-size: 120%;
+    align-self: center;
+  }
+
+  .size4 {
+    font-size: 140%;
+    align-self: baseline;
+  }
+}
+
+/* tag cloud end */
+
+/* Blog - Pagination */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Blog - Pagination end  */
+
+/* Blog  */
+.mod_newslist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.layout_latest {
+  border-bottom: 3px solid hotpink;
+  position: relative;
+
+  p.info {
+    position: absolute;
+    top: 6px;
+    right: 0px;
+  }
+}
+
+/* Blog end  */
+
+/* Blog - Kategorien  */
+.mod_newscategories ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  li {
+    padding-right: 20px;
+    margin-right: 40px;
+
+    strong {
+      font-weight: 400;
+    }
+  }
+
+  li::marker {
+    color: hotpink;
+    font-size: 2rem;
+    content: '☺ ';
+  }
+}
+
+/* Blog - Kategorien  */
+
+.ce_text,
+.rs-columns,
+.pagination {
+  margin: .5rem 0 1.5rem 0;
+}

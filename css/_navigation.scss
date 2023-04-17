@@ -1,0 +1,42 @@
+nav {
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+  }
+
+  li {
+    padding-left: 1.3rem;
+    list-style-type: none;
+
+    a:hover {
+      color: green;
+      text-decoration: underline;
+    }
+
+    a:link,
+    a:visited {
+      color: #666;
+      text-decoration: none;
+    }
+
+    a.active {
+      color: yellow;
+      text-decoration: underline;
+    }
+  }
+
+  .invisible {
+    position: absolute;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+}

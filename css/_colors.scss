@@ -1,0 +1,9 @@
+a {
+  color: chocolate;
+  text-decoration: none;
+
+  &:hover {
+    color: green;
+    text-decoration: underline;
+  }
+}
